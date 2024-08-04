@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "chainlit_app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "chainlit_app.py"
+    }
+  ]
+}
